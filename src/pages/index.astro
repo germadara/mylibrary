@@ -1,4 +1,6 @@
 ---
+import Card from "../components/Card.astro";
+import "../styles/css/styles.css"
 
 ---
 
@@ -8,9 +10,20 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>knowledge of german</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<section class="py-20">
+			<div class="container px-4 mx-auto flex flex-col gap-8">
+				<ul class="grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-6">
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+				</ul>
+			</div>
+		</section>
 	</body>
 </html>
